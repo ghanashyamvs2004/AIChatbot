@@ -1,4 +1,4 @@
-# Thejus Engineering College Student Chatbot
+# Thejus Engineering College Student AIChatbot
 
 ## Project Overview
 
