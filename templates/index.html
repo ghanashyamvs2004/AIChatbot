@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Student Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .chat-container {
+            width: 400px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #chat-box {
+            height: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 75%;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <h2>Student Chatbot</h2>
+
+    <div id="chat-box"></div>
+
+    <input type="text" id="user-input" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+document.getElementById("user-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+});
+async function sendMessage() {
+    let input = document.getElementById("user-input");
+    let chatBox = document.getElementById("chat-box");
+    
+    let message = input.value;
+    
+    chatBox.innerHTML += `<p><b>You:</b> ${message}</p>`;
+    
+    let response = await fetch("/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            message: message
+        })
+    });
+    
+    let data = await response.json();
+    
+    chatBox.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+    
+    input.value = "";
+}
+</script>
+
+</body>
+</html>
