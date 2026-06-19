@@ -1,0 +1,146 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! Welcome to Thejus Engineering College chatbot."
+      ]
+    },
+    {
+      "tag": "college_name",
+      "patterns": [
+        "What is the name of this college?",
+        "Which college is this?",
+        "Tell me about Thejus Engineering College",
+        "What is Thejus?"
+      ],
+      "responses": [
+        "Thejus Engineering College is an engineering institution located in Kerala. <a href='https://www.thejusengg.com/'>website</a>"
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What courses are available?",
+        "Which branches are offered?",
+        "What engineering programs do you have?",
+        "Available departments"
+      ],
+      "responses": [
+        "Computer Science Engineering :<a href='https://www.thejusengg.com/academic/department/Computer-Science-And-Engineering'>Click</a>"
+      ]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "How can I get admission?",
+        "Admission process",
+        "Eligibility for admission",
+        "How to join the college?"
+      ],
+      "responses": [
+        "You can contact the admission office or visit the college website for admission details. <a href='https://www.thejusengg.com/admission'>website</a>"
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "What is the fee structure?",
+        "College fees",
+        "Tuition fees",
+        "How much are the fees?"
+      ],
+      "responses": [
+        "Please contact the college office for the latest fee structure."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "Do you have a library?",
+        "Library timings",
+        "Tell me about the library"
+      ],
+      "responses": [
+        "The college provides library facilities for students."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "Placement details",
+        "Do you provide placements?",
+        "Companies visiting campus",
+        "Placement opportunities"
+      ],
+      "responses": [
+        "The placement cell assists students with training and recruitment opportunities."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "Is hostel available?",
+        "Hostel facilities",
+        "Boys hostel",
+        "Girls hostel"
+      ],
+      "responses": [
+        "Please contact the college administration for hostel availability and details."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is the college located?",
+        "College address",
+        "How to reach the college?",
+        "Location of Thejus Engineering College"
+      ],
+      "responses": [
+        "Thejus Engineering College is located in Vellarakkad, Thrissur district, Kerala."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "Contact number",
+        "College phone number",
+        "How can I contact the college?",
+        "Email address"
+      ],
+      "responses": [
+        "Please visit the official website for the latest contact details."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day."
+      ]
+    }
+  ]
+}
