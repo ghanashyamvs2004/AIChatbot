@@ -75,16 +75,6 @@ Through this project, the following concepts were explored:
 * HTTP requests and responses
 * User interface design
 
-## Future Enhancements
-
-* AI-powered responses using machine learning.
-* Database integration.
-* Student login system.
-* Attendance and result tracking.
-* Voice-based interaction.
-* Integration with college management systems.
-* Multilingual support.
-* Mobile application version.
 
 ## Conclusion
 
